@@ -1,0 +1,44 @@
+.stock {
+  margin: 9px;
+  position: relative;
+}
+
+.stock-item {
+  width: 49%;
+  text-align: center;
+  margin: 0;
+  user-select: none;
+  margin-bottom: 10px;
+}
+
+.all-stock {
+  width: 32%;
+}
+
+.car-list-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.stock-select {
+  user-select: none;
+  color: black;
+}
+
+.stock-select:hover {
+  color: #bdbdbd;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .car-list-container {
+    display: block;
+  }
+
+  .stock-select:hover {
+    color: #000000;
+    cursor: pointer;
+  }
+}

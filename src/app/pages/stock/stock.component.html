@@ -1,0 +1,28 @@
+<div class="stock">
+    <!-- DEALER PICKS -->
+    <div *ngIf="dealerPicks">
+        <h1 class="header" style="margin: 20px;">Dealer Picks</h1>
+        <div class="car-list-container">
+            <ng-container *ngFor="let dealerPick of dealerPicks">
+                <dmb-stock-item class="stock-item" [item]="dealerPick"></dmb-stock-item>
+            </ng-container>
+        </div>
+    </div>
+
+    <!-- ALL STOCK -->
+    <div *ngIf="allStock">
+        <div class="car-list-container">
+            <ng-container *ngFor="let item of otherStock">
+                <dmb-stock-item class="all-stock stock-item" [item]="item"></dmb-stock-item>
+            </ng-container>
+        </div>
+    </div>
+
+    <div class="horizontal-center">
+        <div class="stock-select" (click)="openStock()">
+            <mat-icon *ngIf="allStock">keyboard_arrow_up</mat-icon>
+            <p class="option-header">{{ allStock? 'Show less' : 'Show more'}}</p>
+            <mat-icon *ngIf="!allStock">keyboard_arrow_down</mat-icon>
+        </div>
+    </div>
+</div>

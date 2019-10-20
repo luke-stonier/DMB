@@ -1,0 +1,50 @@
+.section {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.landing {
+  background: url("/assets/DSC087572-4-1-1199x800.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.consignment {
+  background: url("/assets/DSC03899.JPG-1199x800.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.details {
+  background: url("/assets/DSC000242-1155x800.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.business {
+  background: url("/assets/Watermarked2017-09-09-2205-1199x800.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.footer {
+  background: #848484;
+}
+
+.mid-container {
+  width: 40%;
+}
+
+@media only screen and (max-width: 768px) {
+  .mid-container {
+    width: 90%;
+  }
+}

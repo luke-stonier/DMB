@@ -1,0 +1,46 @@
+.header-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 10;
+}
+
+.logo {
+  background: #efefef;
+  height: 64px;
+  padding: 10px;
+}
+
+.logo img {
+  height: 100%;
+}
+
+.navigation {
+  width: 100%;
+  box-shadow: 0 10px 8px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+}
+
+.top-spacer {
+  display: none;
+}
+
+.fade {
+  color: #ffffff;
+
+  .top-spacer {
+    margin-top: 25px;
+    display: block;
+  }
+
+  .upper-container {
+    display: none;
+  }
+
+  .navigation {
+    background: transparent;
+    box-shadow: none;
+  }
+}

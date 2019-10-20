@@ -1,1 +1,114 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+.horizontal-divider {
+  height: 1px;
+  width: 100%;
+  background: #d9d9d9;
+}
+.flat-button {
+  border: none;
+  padding: 20px;
+  margin: 0;
+  background: #ffffff;
+  cursor: pointer;
+  outline: none;
+  color: #8f8f8f;
+}
+.flat-button:hover {
+  background: #efefef;
+}
+.fade {
+  .flat-button {
+    border: none;
+    padding: 20px;
+    margin: 0;
+    background: transparent;
+    cursor: pointer;
+    outline: none;
+    color: #bdbdbd;
+  }
+  .flat-button:hover {
+    background: transparent;
+    color: #ffffff;
+  }
+}
+
+.cursive {
+  font-family: "Tangerine", cursive;
+  font-size: 235%;
+  color: #ffffff;
+  font-weight: 100;
+}
+
+.section-header {
+  font-family: "Lato", sans-serif;
+  font-weight: 200;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.title-header {
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 235%;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  text-align: center;
+  font-size: 200%;
+  margin: 0;
+  padding: 0;
+}
+
+.option-header {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  text-align: center;
+  font-size: 150%;
+  margin: 0;
+  padding: 0;
+}
+
+.small-text {
+  font-size: 100%;
+}
+
+.center {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  position: absolute;
+  top: 40%;
+  -ms-transform: translateY(-30%);
+  transform: translateY(-30%);
+}
+
+.horizontal-center {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #efefef;
+}
+::-webkit-scrollbar-thumb {
+  background: #414141;
+}
